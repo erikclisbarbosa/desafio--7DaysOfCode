@@ -296,7 +296,7 @@ Fim 5º section
 */
 
 /*
-Inicio 6º section
+Inicio footer
 */
 
 .container {
@@ -336,7 +336,53 @@ footer input {
     color: var(--texto-geral);
 
 }
+/*
+Fim footer
+*/
 
 /*
-Fim 6º section
+display:none @media (max-width: 490px)
 */
+
+.header__menu-h {
+    display: none;
+}
+
+
+@media (max-width: 490px)  {
+    body {
+        max-width: 100%;
+    }
+
+    .header__menu, .header__login {
+        display: none;
+    }
+
+    .section-2 {
+        display: inline;
+        text-align: center;
+    }
+
+    .section-2__item {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .section-3__img {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    footer input {
+        padding: 10px 18px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .button {
+        margin-bottom: 25px;
+    }
+}
